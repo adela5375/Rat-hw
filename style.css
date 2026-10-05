@@ -1,0 +1,69 @@
+.rat-container {
+    display: flex;
+    gap: 5px;
+    width: 200px;
+    height: 150px;
+    margin:auto;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.box-image {
+    width: 200;
+    height: 200px;
+    object-fit: cover;
+}
+
+.iloverats {
+    color: rgb(151, 153, 27);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.text-box {
+    width: 600px;
+    height: 100px;
+    border: 5px solid rgb(151, 153, 27);
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background-color: rgb(253, 251, 241);
+}
+.text {
+    color: rgb(63, 63, 62);
+    font-size: 20px; 
+    
+}
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("backround.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+@media (max-width: 600px) {
+    .rat-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .box-image {
+        width: 100%;
+        height: auto;
+    }
+}
